@@ -3,24 +3,29 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Cadastro Carros</title>
+	<title>Cadastro Carros</title>
+	<link rel="stylesheet" type="text/css" href="css/principal.css">
       
 </head>
 <body>
 
+	<h2>Cadastro de Carros</h2>
+
     <form id="form-adicionar">
-        <label>Marca:</label>
+        <label>*Marca:</label>
         <input id="marca" type="text" placeholder="marca"> <br>
-        <label>Modelo:</label>
+        <label>*Modelo:</label>
         <input id="modelo" type="text" placeholder="modelo"> <br>
-        <label>Ano:</label>
+        <label>*Ano:</label>
         <input id="ano" type="number" placeholder="ano"> <br>
         <label>Kilometragem:</label>
         <input id="kilometragem" type="number" placeholder="kilometragem"> <br>
         <label>Descrição:</label>
         <input id="descricao" type="text" placeholder="descricão"> <br>
 	</form>
+
 	<button id="adicionar-carros">Adicionar</button>
+	<ul id="mensagens-erro"></ul>
 
     <table>
 		<thead>
@@ -43,6 +48,7 @@
 		</tbody>
 	</table>
     
-    <script src="js/adiciona-carros.js"></script>
+	<script src="js/adiciona-carros.js"></script>
+	<script src="js/validacoes.js"></script>
 </body>
 </html>

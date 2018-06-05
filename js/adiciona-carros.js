@@ -6,12 +6,31 @@ botaoAdicionar.addEventListener("click", function(){
 
     var carros = obtemCarrosFormulario(form);
 
+    var erros = validaCampos(carros);
+
+    if (erros.length > 0){
+        exibeMensagensErro(erros);
+        return;
+    }
+
     adicionaCarroNaTabela(carros);
 
     console.log(carros);
 
     //form.reset();
 });
+
+function exibeMensagensErro(erros){
+
+    var ul = document.querySelector("#mensagens-erro");
+    ul.innerHTML = ""; //limpa erros
+    erros.forEach(function(erro){
+        var li = document.createElement("li");
+        li.textContent = erro;
+        li.classList.add("erros");
+        ul.appendChild(li);
+    });
+}  
 
 function adicionaCarroNaTabela(carros){
     var carroTr = montaTr(carros);
