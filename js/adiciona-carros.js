@@ -9,13 +9,17 @@ botaoAdicionar.addEventListener("click", function(){
     var erros = validaCampos(carros);
 
     if (erros.length > 0){
+        //var campoObrigatorio = document.querySelector(".invisivel");
+        //campoObrigatorio.classList.remove("invisivel");
+        
         exibeMensagensErro(erros);
+
         return;
     }
 
     adicionaCarroNaTabela(carros);
-
-    console.log(carros);
+    var limpaErro = document.querySelector("#mensagens-erro");
+    limpaErro.innerHTML = "";
 
     //form.reset();
 });

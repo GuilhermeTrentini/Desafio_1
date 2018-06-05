@@ -17,3 +17,7 @@ th{
 	font-weight: bold;
 	background-color:rgb(219, 219, 219);
 }
+
+.invisivel{
+	display: none;
+}
