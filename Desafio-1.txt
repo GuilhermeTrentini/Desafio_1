@@ -1,0 +1,15 @@
+﻿Desafio:
+	Criar um sistema CRUD (Criar, ver, alterar e deletar) para uma loja de carros.
+	No cadastro devera ter as informações :
+		Marca *
+		Modelo *
+		Ano *
+		KM
+		Descriçao
+	obs: os campos obrigatorio estão com *
+	Ao fazer a listagem dos veiculos devera ter um campo de filtro, que filtre por qualquer informação.
+	Apos o código fonte estar pronto,devera criado um pull request no git (https://github.com/andretimm/cadastro-carror.git), que irei avaliar o código.
+	Tecnologias :
+		JavaScript
+		Pode ser utilizado qualquer lib.
+	

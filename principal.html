@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Cadastro Carros</title>
+      
+</head>
+<body>
+
+    <form id="form-adicionar">
+        <label>Marca:</label>
+        <input id="marca" type="text" placeholder="marca"> <br>
+        <label>Modelo:</label>
+        <input id="modelo" type="text" placeholder="modelo"> <br>
+        <label>Ano:</label>
+        <input id="ano" type="number" placeholder="ano"> <br>
+        <label>Kilometragem:</label>
+        <input id="kilometragem" type="number" placeholder="kilometragem"> <br>
+        <label>Descrição:</label>
+        <input id="descricao" type="text" placeholder="descricão"> <br>
+	</form>
+	<button id="adicionar-carros">Adicionar</button>
+
+    <table>
+		<thead>
+			<tr>
+				<th>Marca</th>
+				<th>Modelo</th>
+				<th>Ano</th>
+				<th>Kilometragem</th>
+				<th>Descrição</th>
+			</tr>
+		</thead>
+		<tbody id="tabela-carros">
+		<tr class="carros">
+		    	<td class="info-marca">Volkswagen</td>
+				<td class="info-modelo">Gol</td>
+				<td class="info-ano">2005</td>
+				<td class="info-kilometragem">140.000</td>
+				<td class="info-descricao">Teste</td>
+			</tr>
+		</tbody>
+	</table>
+    
+    <script src="js/adiciona-carros.js"></script>
+</body>
+</html>
