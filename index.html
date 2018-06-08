@@ -14,17 +14,17 @@
     <form id="form-adicionar">
 		<label class="invisivel">*</label>
         <label>Marca:</label>
-		<input id="marca" type="text" placeholder="marca"> <br>
+		<input class="campo-texto" id="marca" type="text" placeholder="marca"> <br>
 		<label class="invisivel">*</label>
         <label>Modelo:</label>
-		<input id="modelo" type="text" placeholder="modelo"> <br>
+		<input class="campo-texto" id="modelo" type="text" placeholder="modelo"> <br>
 		<label class="invisivel">*</label>
         <label>Ano:</label>
         <input id="ano" type="number" placeholder="ano"> <br>
         <label>Kilometragem:</label>
-        <input id="kilometragem" type="number" placeholder="kilometragem"> <br>
+        <input class="campo-texto" id="kilometragem" type="number" placeholder="kilometragem"> <br>
         <label>Descrição:</label>
-        <input id="descricao" type="text" placeholder="descricão"> <br>
+		<input class="campo-texto" id="descricao" type="text" placeholder="descricão"> <br>
 	</form>
 
 	<button id="adicionar-carros">Adicionar</button>
@@ -41,12 +41,13 @@
 			</tr>
 		</thead>
 		<tbody id="tabela-carros">
-		<tr class="carros">
+			<tr class="carros">
 		    	<td class="info-marca">Volkswagen</td>
 				<td class="info-modelo">Gol</td>
 				<td class="info-ano">2005</td>
 				<td class="info-kilometragem">140.000</td>
 				<td class="info-descricao">Teste</td>
+				<td class="info-remover"><button class="remover">Remover</button></td>
 			</tr>
 		</tbody>
 	</table>

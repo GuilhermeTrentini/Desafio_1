@@ -28,9 +28,9 @@ function exibeMensagensErro(erros){
 
     var ul = document.querySelector("#mensagens-erro");
     ul.innerHTML = ""; //limpa erros
-    erros.forEach(function(erro){
+    erros.forEach(function(erros){
         var li = document.createElement("li");
-        li.textContent = erro;
+        li.textContent = erros;
         li.classList.add("erros");
         ul.appendChild(li);
     });
@@ -63,14 +63,33 @@ function montaTr(carros){
     carroTr.appendChild(montaTd(carros.ano, "info-ano"));
     carroTr.appendChild(montaTd(carros.kilometragem, "info-kilometragem"));
     carroTr.appendChild(montaTd(carros.descricao, "info-descricao"));
+    
+    var botaoRemover = document.createElement("button");
+    botaoRemover.setAttribute("class", "remover");
+    botaoRemover.innerText = "Remover";
+    carroTr.appendChild(montaTd(carros.botaoRemover, "info-remover", botaoRemover));
+
+//removerCarro sendo posicionada sempre que cria um novo campo
+    botaoRemover.addEventListener("click", function(event){ 
+        removerCarro(this); //this é quem chamou evento click, no caso "botaoRemover"
+    
+    });
 
     return carroTr;
 }
 
-function montaTd(dado,classe){
+function montaTd(dado,classe, tipo){
     var td = document.createElement("td");
     td.textContent = dado;
     td.classList.add(classe);
+    
+    if (tipo != null)
+    td.appendChild(tipo);
 
     return td;
+}
+
+function removerCarro(element){
+
+    element.parentNode.parentNode.remove();
 }

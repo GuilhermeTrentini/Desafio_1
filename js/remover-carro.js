@@ -1,7 +1,7 @@
-var carros = document.querySelectorAll(".carros");
+//utilizado apenas para a tabela que inicia em tela
+var tabela = document.querySelector(".remover");
+tabela.addEventListener("click", function(){
+    
+    tabela.parentNode.parentNode.remove();  
 
-var tabela = document.querySelector("table");
-
-tabela.addEventListener("dblclick", function(event){
-    event.target.parentNode.remove();
 });
