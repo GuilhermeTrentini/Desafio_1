@@ -1,11 +1,18 @@
 function validaCampos(carros){
     var logAno = false;
     var erros = [];
+    
     if (carros.marca.length == 0){
         erros.push("O campo marca não pode ficar em branco!");
+            $("#marca-hide").show();
+    }else{
+        $("#marca-hide").hide();
     }
     if (carros.modelo.length == 0){
         erros.push("O campo modelo não pode ficar em branco!");
+        $("#modelo-hide").show();
+    }else{
+        $("#modelo-hide").hide();
     }
     if (carros.ano.length == 0){
         logAno = true;
@@ -18,3 +25,7 @@ function validaCampos(carros){
     }
     return erros;
 }
+
+$(document).ready(function(){
+    $(".label-hide").hide();
+});
