@@ -5,52 +5,52 @@
     <meta charset="utf-8">
 	<title>Cadastro Carros</title>
 	<link rel="stylesheet" type="text/css" href="css/principal.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
 </head>
 <body>
+	
+		<h2>Cadastro de Carros</h2>
 
-	<h2>Cadastro de Carros</h2>
+		<form id="form-adicionar">
+			<label>Marca:</label>
+			<input class="col-sm-12 col-xs-12" id="marca" type="text" placeholder="marca"> <br>
+			<label>Modelo:</label>
+			<input class="col-sm-12 col-xs-12" id="modelo" type="text" placeholder="modelo"> <br>
+			<label>Ano:</label>
+			<select id="ano" class="col-sm-12 col-xs-12">
+					<option>2000</option>
+					<option>2001</option>
+					<option>2002</option>
+					<option>2003</option>
+					<option>2004</option>
+					<option>2005</option>				
+					<option>2006</option>
+					<option>2007</option>
+					<option>2008</option>
+					<option>2009</option>
+					<option>2010</option>
+					<option>2011</option>
+					<option>2012</option>
+					<option>2013</option>
+					<option>2014</option>
+					<option>2015</option>
+					<option>2016</option>
+					<option>2017</option>
+					<option>2018</option>
+			</select><br>
+			<label>Kilometragem:</label>
+			<input class="col-sm-12 col-xs-12" id="kilometragem" type="number" placeholder="kilometragem"> <br>
+			<label>Descrição:</label>
+			<input class="col-sm-12 col-xs-12" id="descricao" type="text" placeholder="descricão"> <br>
+		</form>
 
-    <form id="form-adicionar">
-		<label class="invisivel">*</label>
-        <label>Marca:</label>
-		<input class="campo-texto" id="marca" type="text" placeholder="marca"> <br>
-		<label class="invisivel">*</label>
-        <label>Modelo:</label>
-		<input class="campo-texto" id="modelo" type="text" placeholder="modelo"> <br>
-		<label class="invisivel">*</label>
-        <label>Ano:</label>
-		<select id="ano">
-				<option>2000</option>
-				<option>2001</option>
-				<option>2002</option>
-				<option>2003</option>
-				<option>2004</option>
-				<option>2005</option>				
-				<option>2006</option>
-				<option>2007</option>
-				<option>2008</option>
-				<option>2009</option>
-				<option>2010</option>
-				<option>2011</option>
-				<option>2012</option>
-				<option>2013</option>
-				<option>2014</option>
-				<option>2015</option>
-				<option>2016</option>
-				<option>2017</option>
-				<option>2018</option>
-		</select><br>
-        <label>Kilometragem:</label>
-        <input class="campo-texto" id="kilometragem" type="number" placeholder="kilometragem"> <br>
-        <label>Descrição:</label>
-		<input class="campo-texto" id="descricao" type="text" placeholder="descricão"> <br>
-	</form>
+		<button id="adicionar-carros">Adicionar</button>
+		<ul id="mensagens-erro"></ul>
 
-	<button id="adicionar-carros">Adicionar</button>
-	<ul id="mensagens-erro"></ul>
-
-    <table>
+    <table class="col-sm-12 col-xs-12">
 		<thead>
 			<tr>
 				<th>Marca</th>
@@ -75,5 +75,6 @@
 	<script src="js/adiciona-carros.js"></script>
 	<script src="js/validacoes.js"></script>
 	<script src="js/remover-carro.js"></script>
+
 </body>
 </html>
