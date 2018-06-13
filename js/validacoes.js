@@ -14,7 +14,7 @@ function validaCampos(carros){
     }else{
         $("#modelo-hide").hide();
     }
-    if (carros.ano.length == 0){
+    /*if (carros.ano.length == 0){
         logAno = true;
         erros.push("O campo ano não pode ficar em branco!");
     }
@@ -22,7 +22,7 @@ function validaCampos(carros){
         if (carros.ano < 1900 || carros.ano > 2018){
             erros.push("O campo ano não pode ser menor que 1900 e nem maior que o ano atual!");
         }
-    }
+    }*/
     return erros;
 }
 

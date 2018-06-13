@@ -93,3 +93,17 @@ function removerCarro(element){
 
     element.parentNode.parentNode.remove();
 }
+
+function criaAno(){
+var dataAtual = new Date();
+var anoAtual = dataAtual.getFullYear(); 
+var anoInicial = 1980;
+var campoAno = document.querySelector("#ano");
+
+    for(var i = anoInicial; i <= anoAtual; i++){
+        var criaOption = document.createElement("option");
+        
+        campoAno.appendChild(criaOption);
+        criaOption.innerText = i;
+    };	
+}
