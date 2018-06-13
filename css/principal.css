@@ -5,7 +5,8 @@
 table{
 	width: 50%;
 	margin-bottom : .5em;
-    table-layout: fixed;
+	table-layout: fixed;
+	margin: 10px;
 }
 
 td, th {
@@ -18,3 +19,7 @@ th{
 	background-color:rgb(219, 219, 219);
 }
 
+#teste{
+	margin: 10px;
+	background-color:rgb(219, 219, 219);
+}
