@@ -2,24 +2,18 @@
     color: red;
 }
 
-table{
-	width: 50%;
-	margin-bottom : .5em;
-	table-layout: fixed;
-	margin: 10px;
-}
-
 td, th {
-	border: 1px solid rgb(0, 0, 0);
-	text-align: center;
+ border: 1px solid rgb(0, 0, 0);
+ text-align: center;
 }
 
 th{
-	font-weight: bold;
-	background-color:rgb(219, 219, 219);
+ font-weight: bold;
+ background-color:rgb(219, 219, 219);
 }
 
-#teste{
-	margin: 10px;
-	background-color:rgb(219, 219, 219);
+#cadastroGeral{
+ margin: 10px;
+ border: 1px solid rgb(0, 0, 0);
+ padding: 10px;
 }

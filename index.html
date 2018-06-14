@@ -11,50 +11,52 @@
       
 </head>
 <body onload="criaAno()">
-	<div id="teste">
+	<div id="cadastroGeral" class="row">
 		<h2>Cadastro de Carros</h2>
 		
-		<form id="form-adicionar">
+		<form id="form-adicionar" class="col-sm-12 col-xs-12">
 			<label class="label-hide" id="marca-hide">*</label>
 			<label>Marca:</label>
-			<input class="col-sm-12 col-xs-12" id="marca" type="text" placeholder="marca"> <br>
+			<input  id="marca" type="text" placeholder="marca"> <br>
 			<label class="label-hide" id="modelo-hide">*</label>
 			<label>Modelo:</label>
-			<input class="col-sm-12 col-xs-12" id="modelo" type="text" placeholder="modelo"> <br>
+			<input id="modelo" type="text" placeholder="modelo"> <br>
 			<label>Ano:</label>
-			<select id="ano" class="col-sm-12 col-xs-12">
+			<select id="ano">
 
 			</select><br>
 			<label>Kilometragem:</label>
-			<input class="col-sm-12 col-xs-12" id="kilometragem" type="number" placeholder="kilometragem"> <br>
+			<input id="kilometragem" type="number" placeholder="kilometragem"> <br>
 			<label>Descrição:</label>
-			<input class="col-sm-12 col-xs-12" id="descricao" type="text" placeholder="descricão"> <br>
+			<input id="descricao" type="text" placeholder="descricão"> <br>
 		</form>
 
 		<button id="adicionar-carros">Adicionar</button>
 		<ul id="mensagens-erro"></ul>
+
+		<table id="tabela" class="col-sm-12 col-xs-12">
+			<thead>
+				<tr>
+					<th>Marca</th>
+					<th>Modelo</th>
+					<th>Ano</th>
+					<th>Kilometragem</th>
+					<th>Descrição</th>				
+				</tr>
+			</thead>
+			<tbody id="tabela-carros">
+				<tr class="carros">
+					<td class="info-marca">Volkswagen</td>
+					<td class="info-modelo">Gol</td>
+					<td class="info-ano">2005</td>
+					<td class="info-kilometragem">140.000</td>
+					<td class="info-descricao">Teste</td>
+					<td class="info-remover"><button class="remover">Remover</button></td>
+				</tr>
+			</tbody>
+		</table>
+
 	</div>
-    <table class="col-sm-12 col-xs-12">
-		<thead>
-			<tr>
-				<th>Marca</th>
-				<th>Modelo</th>
-				<th>Ano</th>
-				<th>Kilometragem</th>
-				<th>Descrição</th>				
-			</tr>
-		</thead>
-		<tbody id="tabela-carros">
-			<tr class="carros">
-		    	<td class="info-marca">Volkswagen</td>
-				<td class="info-modelo">Gol</td>
-				<td class="info-ano">2005</td>
-				<td class="info-kilometragem">140.000</td>
-				<td class="info-descricao">Teste</td>
-				<td class="info-remover"><button class="remover">Remover</button></td>
-			</tr>
-		</tbody>
-	</table>
     
 	<script src="js/adiciona-carros.js"></script>
 	<script src="js/validacoes.js"></script>
